@@ -2,6 +2,9 @@ package com.example.departmentservice.model;
 
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
 import lombok.*;
 
 import java.util.ArrayList;
@@ -15,6 +18,8 @@ import java.util.List;
 public class Department extends BaseEntity{
 
     private String name;
-   // private List<Employee> employees = new ArrayList<>();
+    @OneToMany(fetch = FetchType.EAGER)
+    @JoinColumn(name="employees_id", nullable = false)
+    private List<Employee> employees = new ArrayList<>();
 
 }
