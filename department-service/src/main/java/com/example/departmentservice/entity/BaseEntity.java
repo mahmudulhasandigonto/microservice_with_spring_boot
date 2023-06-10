@@ -1,4 +1,4 @@
-package com.example.departmentservice.model;
+package com.example.departmentservice.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

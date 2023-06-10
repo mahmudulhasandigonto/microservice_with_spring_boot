@@ -1,4 +1,4 @@
-package com.example.departmentservice.model;
+package com.example.departmentservice.entity;
 
 
 import jakarta.persistence.Entity;
@@ -18,8 +18,8 @@ import java.util.List;
 public class Department extends BaseEntity{
 
     private String name;
-    @OneToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name="employees_id", nullable = false)
-    private List<Employee> employees = new ArrayList<>();
+    //@OneToMany(fetch = FetchType.EAGER)
+   // @JoinColumn(name="employees_id", nullable = false)
+   // private List<Employee> employees = new ArrayList<>();
 
 }

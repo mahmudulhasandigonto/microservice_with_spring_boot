@@ -1,13 +1,12 @@
 package com.example.departmentservice.serviceImplementaion;
 
-import com.example.departmentservice.model.Department;
+import com.example.departmentservice.entity.Department;
 import com.example.departmentservice.repository.DepartmentRepository;
 import com.example.departmentservice.service.DepartmentService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.awt.dnd.InvalidDnDOperationException;
-import java.sql.Driver;
 import java.util.Arrays;
 import java.util.List;
 

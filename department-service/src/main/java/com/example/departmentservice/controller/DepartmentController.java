@@ -2,7 +2,7 @@ package com.example.departmentservice.controller;
 
 import com.example.departmentservice.error.DeleteRequestException;
 import com.example.departmentservice.error.DepartmentNotFoundException;
-import com.example.departmentservice.model.Department;
+import com.example.departmentservice.entity.Department;
 import com.example.departmentservice.service.DepartmentService;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.sql.Driver;
 import java.util.Arrays;
 import java.util.List;
 
